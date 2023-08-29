@@ -11,5 +11,6 @@ func main() {
 	ginServer.GET("/hello", func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"name": "jack"})
 	})
+
 	ginServer.Run(":8082")
 }
